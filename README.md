@@ -2,6 +2,10 @@
 
 An unofficial reimplementation for NeoForge "API".
 
+Of course this repo contains bunch of NeoForge code, so it's LGPL 2.1 licensed.
+
+[NeoForge source code](https://github.com/NeoForged/NeoForge)
+
 ## Why develop it?
 
 * NeoForge assumes all mods are NeoForge mod, 
