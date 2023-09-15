@@ -1,26 +1,31 @@
 {
 	"schema_version": 1,
 	"quilt_loader": {
-		"group": "com.example",
-		"id": "example_mod",
+		"group": "net.pillowmc",
+		"id": "shear-api",
 		"version": "${version}",
 		"metadata": {
-			"name": "Mod Name",
-			"description": "A short description of your mod.",
+			"name": "Shear API",
+			"description": "Shear API, NEW broad compatibility API for Quilt.",
 			"contributors": {
-				"Your name here": "Owner"
+				"PillowMC": "Owner",
+				"The NeoForged Team": "NeoForge Owner (credits only)"
 			},
 			"contact": {
-				"homepage": "https://example.com/",
-				"issues": "https://github.com/QuiltMC/quilt-template-mod/issues",
-				"sources": "https://github.com/QuiltMC/quilt-template-mod"
+				"homepage": "https://pillowmc.github.io/",
+				"issues": "https://github.com/PillowMC/ShearAPI/issues",
+				"sources": "https://github.com/PillowMC/ShearAPI"
 			},
-			"icon": "assets/example_mod/icon.png"
+			"icon": "assets/shear-api/icon.png"
 		},
 		"intermediate_mappings": "net.fabricmc:intermediary",
 		"entrypoints": {
-			"init": "com.example.example_mod.ExampleMod"
+			"init": "net.pillowmc.shearapi.ShearApi",
+			"event": [
+				"net.minecraftforge.logging.CrashReportExtender"
+			]
 		},
+		"access_widener": "shear_api.accesswidener",
 		"depends": [
 			{
 				"id": "quilt_loader",
@@ -34,7 +39,41 @@
 				"id": "minecraft",
 				"versions": ">=1.20"
 			}
+		],
+		"provides": [
+			{
+				"id": "forge",
+				"version": "47.1.66"
+			}
 		]
 	},
-	"mixin": "example_mod.mixins.json"
+	"mixin": "shear_api.mixins.json",
+  "quilt_loom": {
+    "injected_interfaces": {
+      "net/minecraft/class_3611": [
+        "net/minecraftforge/common/extensions/IForgeFluid"
+      ],
+      "net/minecraft/class_3610": [
+        "net/minecraftforge/common/extensions/IForgeFluidState"
+      ],
+      "net/minecraft/class_4590": [
+        "net/minecraftforge/common/extensions/IForgeTransformation"
+      ],
+			"net/minecraft/class_161$class_162": [
+				"net/minecraftforge/common/extensions/IForgeAdvancementBuilder"
+			],
+			"net/minecraft/class_129": [
+				"net/pillowmc/shearapi/extensions/crash/IShearCrashReportCategory"
+			],
+			"net/minecraft/class_1688": [
+				"net/minecraftforge/common/extensions/IForgeAbstractMinecart"
+			],
+			"net/minecraft/class_2241": [
+				"net/minecraftforge/common/extensions/IForgeBaseRailBlock"
+			],
+			"net/minecraft/class_6885": [
+				"net/minecraftforge/common/extensions/IForgeHolderSet"
+			]
+    }
+  }
 }

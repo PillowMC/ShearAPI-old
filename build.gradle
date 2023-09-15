@@ -16,25 +16,40 @@ repositories {
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
+    maven {
+        url "https://maven.neoforged.net/releases"
+    }
 }
 
 // All the dependencies are declared at gradle/libs.version.toml and referenced with "libs.<id>"
 // See https://docs.gradle.org/current/userguide/platforms.html for information on how version catalogs work.
 dependencies {
 	minecraft libs.minecraft
-	mappings variantOf(libs.quilt.mappings) { classifier 'intermediary-v2' }
+	// mappings variantOf(libs.quilt.mappings) { classifier 'intermediary-v2' }
 	// Replace the above line with the block below if you want to use Mojang mappings as your primary mappings, falling back on QM for parameters and Javadocs
-	/*
 	mappings loom.layered {
 		mappings "org.quiltmc:quilt-mappings:${libs.versions.quilt.mappings.get()}:intermediary-v2"
 		officialMojangMappings()
 	}
-	*/
 	modImplementation libs.quilt.loader
 
 	// QSL is not a complete API; You will need Quilted Fabric API to fill in the gaps.
 	// Quilted Fabric API will automatically pull in the correct QSL version.
 	modImplementation libs.quilted.fabric.api
+
+	implementation libs.fancymodloader.loader
+	implementation libs.fancymodloader.core
+	implementation libs.fancymodloader.events
+	implementation libs.fancymodloader.earlydisplay
+	implementation libs.language.java
+	implementation libs.language.lowcode
+	implementation libs.language.minecraft
+	implementation libs.forgespi
+	implementation libs.modlauncher
+
+	implementation libs.terminalconsoleappender
+	implementation libs.jline.reader
+	implementation libs.jline.terminal
 	// modImplementation libs.bundles.quilted.fabric.api // If you wish to use Fabric API's deprecated modules, you can replace the above line with this one
 }
 
@@ -52,6 +67,10 @@ tasks.withType(JavaCompile).configureEach {
 	it.options.release = 17
 }
 
+loom {
+	accessWidenerPath = file("src/main/resources/shear_api.accesswidener")
+}
+
 java {
 	// Still required by IDEs such as Eclipse and Visual Studio Code
 	sourceCompatibility = JavaVersion.VERSION_17
@@ -63,7 +82,7 @@ java {
 
 	// If this mod is going to be a library, then it should also generate Javadocs in order to aid with development.
 	// Uncomment this line to generate them.
-	// withJavadocJar()
+	withJavadocJar()
 }
 
 // If you plan to use a different file for the license, don't forget to change the file name here!

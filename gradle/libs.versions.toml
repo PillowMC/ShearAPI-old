@@ -6,6 +6,13 @@ quilt_loader = "0.19.4"
 
 quilted_fabric_api = "7.1.2+0.87.0-1.20.1"
 
+fancymodloader = "47.1.47"
+forgespi = "7.0.1"
+modlauncher = "10.0.9"
+
+terminalconsoleappender = "1.2.0"
+jline = "3.12.+"
+
 [libraries]
 minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
 quilt_mappings = { module = "org.quiltmc:quilt-mappings", version.ref = "quilt_mappings" }
@@ -14,6 +21,19 @@ quilt_loader = { module = "org.quiltmc:quilt-loader", version.ref = "quilt_loade
 quilted_fabric_api = { module = "org.quiltmc.quilted-fabric-api:quilted-fabric-api", version.ref = "quilted_fabric_api" }
 quilted_fabric_api_deprecated = { module = "org.quiltmc.quilted-fabric-api:quilted-fabric-api-deprecated", version.ref = "quilted_fabric_api" }
 
+fancymodloader_loader = { module = "net.neoforged.fancymodloader:loader", version.ref="fancymodloader" }
+fancymodloader_core = { module = "net.neoforged.fancymodloader:core", version.ref="fancymodloader" }
+fancymodloader_events = { module = "net.neoforged.fancymodloader:events", version.ref="fancymodloader" }
+fancymodloader_earlydisplay = { module = "net.neoforged.fancymodloader:earlydisplay", version.ref="fancymodloader" }
+language_java = { module = "net.neoforged.fancymodloader:language-java", version.ref="fancymodloader" }
+language_lowcode = { module = "net.neoforged.fancymodloader:language-lowcode", version.ref="fancymodloader" }
+language_minecraft = { module = "net.neoforged.fancymodloader:language-minecraft", version.ref="fancymodloader" }
+forgespi = { module = "net.minecraftforge:forgespi", version.ref = "forgespi" }
+modlauncher = { module = "cpw.mods:modlauncher", version.ref = "modlauncher" }
+
+terminalconsoleappender = { module = "net.minecrell:terminalconsoleappender", version.ref = "terminalconsoleappender"}
+jline_terminal = { module = "org.jline:jline-terminal", version.ref = "jline"}
+jline_reader = { module = "org.jline:jline-reader", version.ref = "jline"}
 # If you have multiple similar dependencies, you can declare a dependency bundle and reference it on the build script with "libs.bundles.example".
 [bundles]
 quilted_fabric_api = ["quilted_fabric_api", "quilted_fabric_api_deprecated"]
