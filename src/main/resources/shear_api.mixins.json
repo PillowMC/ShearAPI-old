@@ -4,13 +4,15 @@
   "package": "net.pillowmc.shearapi.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "crash.CrashReportMixin",
-    "crash.CrashReportCategoryMixin",
-    "extensions.AdvancementBuilderMixin",
-    "extensions.FluidStateMixin",
-    "extensions.FluidMixin"
+    "extensions.crash.CrashReportCategoryMixin",
+    "extensions.crash.CrashReportMixin",
+    "extensions.neoforge.AdvancementBuilderMixin",
+    "extensions.neoforge.FluidMixin",
+    "extensions.neoforge.FluidStateMixin",
+    "neoforge.TagEntryMixin"
   ],
   "client": [
+    "extensions.client.render.RenderTypeMixin"
   ],
   "injectors": {
     "defaultRequire": 1

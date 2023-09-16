@@ -1,4 +1,4 @@
-package net.pillowmc.shearapi.mixin.crash;
+package net.pillowmc.shearapi.mixin.extensions.crash;
 
 import net.minecraftforge.logging.CrashReportExtender;
 import org.spongepowered.asm.mixin.Mixin;
@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
 
 @Mixin(CrashReport.class)
 public class CrashReportMixin {
-	@Inject(method = "getFriendlyReport", at = @At(value = "INVOKE_ASSIGN", target = "Ljava/lang/StringBuilder;append(Ljava/lang/String;)Ljava/lang/StringBuilder;", ordinal = 0), locals = LocalCapture.CAPTURE_FAILHARD)
+	@Inject(method = "getFriendlyReport", at = @At(value = "INVOKE", target = "Ljava/lang/StringBuilder;append(Ljava/lang/String;)Ljava/lang/StringBuilder;", ordinal = 0, shift = At.Shift.AFTER), locals = LocalCapture.CAPTURE_FAILHARD)
 	public void asString(CallbackInfoReturnable<String> cir, StringBuilder stringbuilder) {
 		CrashReportExtender.addCrashReportHeader(stringbuilder, (CrashReport)(Object)this);
 	}

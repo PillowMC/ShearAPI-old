@@ -52,8 +52,7 @@ public interface IForgeFluid
      * @return the type of this fluid
      */
     default FluidType getFluidType() {
-		// DUMMY BECAUSE MIXIN IMPL THIS.
-		return null;
+		throw new AssertionError("Where are you mixin?");
 	}
 
     /**

@@ -1,4 +1,4 @@
-package net.pillowmc.shearapi.mixin.extensions;
+package net.pillowmc.shearapi.mixin.extensions.neoforge;
 
 import org.spongepowered.asm.mixin.Mixin;
 

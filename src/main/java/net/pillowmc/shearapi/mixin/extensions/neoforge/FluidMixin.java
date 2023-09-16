@@ -1,6 +1,5 @@
-package net.pillowmc.shearapi.mixin.extensions;
+package net.pillowmc.shearapi.mixin.extensions.neoforge;
 
-import net.fabricmc.fabric.mixin.client.rendering.fluid.FluidRendererMixin;
 import net.minecraftforge.common.ForgeHooks;
 import org.spongepowered.asm.mixin.Mixin;
 

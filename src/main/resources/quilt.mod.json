@@ -73,6 +73,12 @@
 			],
 			"net/minecraft/class_6885": [
 				"net/minecraftforge/common/extensions/IForgeHolderSet"
+			],
+			"net/minecraft/class_1921": [
+				"net/pillowmc/shearapi/extensions/client/render/IShearRenderType"
+			],
+			"net/minecraft/class_2960": [
+				"net/pillowmc/shearapi/extensions/resources/IShearResourceLocation"
 			]
     }
   }

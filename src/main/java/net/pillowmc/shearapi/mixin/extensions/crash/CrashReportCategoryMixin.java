@@ -1,4 +1,4 @@
-package net.pillowmc.shearapi.mixin.crash;
+package net.pillowmc.shearapi.mixin.extensions.crash;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
