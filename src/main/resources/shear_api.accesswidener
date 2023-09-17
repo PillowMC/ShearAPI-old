@@ -1,7 +1,7 @@
 accessWidener v2 named
 accessible method net/minecraft/advancements/CriteriaTriggers register (Lnet/minecraft/advancements/CriterionTrigger;)Lnet/minecraft/advancements/CriterionTrigger;
 # default net/minecraft/client/KeyMapping isDown
-# accessible field net/minecraft/client/Minecraft textureManager
+accessible field net/minecraft/client/Minecraft textureManager Lnet/minecraft/client/renderer/texture/TextureManager;
 accessible method net/minecraft/client/Minecraft createSearchTrees ()V
 # mutable field net/minecraft/client/Options keyMappings
 accessible class net/minecraft/client/Options$FieldAccess
@@ -55,28 +55,28 @@ accessible field net/minecraft/client/gui/Gui minecraft Lnet/minecraft/client/Mi
 # protected net/minecraft/client/gui/Gui title
 # protected net/minecraft/client/gui/Gui subtitle
 # #endgroup
-# protected net/minecraft/client/gui/Gui renderHearts (Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/world/entity/player/Player;IIIIFIIIZ)V
+accessible method net/minecraft/client/gui/Gui renderHearts (Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/world/entity/player/Player;IIIIFIIIZ)V
 accessible method net/minecraft/client/gui/Gui displayScoreboardSidebar (Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/world/scores/Objective;)V
 accessible method net/minecraft/client/gui/Gui renderCrosshair (Lnet/minecraft/client/gui/GuiGraphics;)V
 accessible method net/minecraft/client/gui/Gui renderVignette (Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/world/entity/Entity;)V
-# protected net/minecraft/client/gui/Gui renderTextureOverlay (Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;F)V
+accessible method net/minecraft/client/gui/Gui renderTextureOverlay (Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;F)V
 accessible method net/minecraft/client/gui/Gui renderSpyglassOverlay (Lnet/minecraft/client/gui/GuiGraphics;F)V
-# protected net/minecraft/client/gui/Gui renderPortalOverlay (Lnet/minecraft/client/gui/GuiGraphics;F)V
+accessible method net/minecraft/client/gui/Gui renderPortalOverlay (Lnet/minecraft/client/gui/GuiGraphics;F)V
 accessible method net/minecraft/client/gui/Gui renderHotbar (FLnet/minecraft/client/gui/GuiGraphics;)V
 accessible method net/minecraft/client/gui/Gui renderEffects (Lnet/minecraft/client/gui/GuiGraphics;)V
-# protected net/minecraft/client/gui/Gui drawBackdrop (Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;III)V
+accessible method net/minecraft/client/gui/Gui drawBackdrop (Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;III)V
 # protected net/minecraft/client/gui/components/AbstractSelectionList$Entry list
-# accessible field net/minecraft/client/gui/components/AbstractSliderButton SLIDER_LOCATION
-# protected net/minecraft/client/gui/components/AbstractSliderButton getHandleTextureY ()I
-# protected net/minecraft/client/gui/components/AbstractSliderButton getTextureY ()I
+accessible field net/minecraft/client/gui/components/AbstractSliderButton SLIDER_LOCATION Lnet/minecraft/resources/ResourceLocation;
+accessible method net/minecraft/client/gui/components/AbstractSliderButton getHandleTextureY ()I
+accessible method net/minecraft/client/gui/components/AbstractSliderButton getTextureY ()I
 # protected net/minecraft/client/gui/components/DebugScreenOverlay block
 # protected net/minecraft/client/gui/components/DebugScreenOverlay liquid
 accessible method net/minecraft/client/gui/screens/MenuScreens register (Lnet/minecraft/world/inventory/MenuType;Lnet/minecraft/client/gui/screens/MenuScreens$ScreenConstructor;)V
 accessible class net/minecraft/client/gui/screens/MenuScreens$ScreenConstructor
-# accessible field net/minecraft/client/gui/screens/Screen renderables
-# accessible field net/minecraft/client/model/geom/LayerDefinitions OUTER_ARMOR_DEFORMATION
-# accessible field net/minecraft/client/model/geom/LayerDefinitions INNER_ARMOR_DEFORMATION
-# accessible field net/minecraft/client/multiplayer/ClientPacketListener commands commands
+accessible field net/minecraft/client/gui/screens/Screen renderables Ljava/util/List;
+accessible field net/minecraft/client/model/geom/LayerDefinitions OUTER_ARMOR_DEFORMATION Lnet/minecraft/client/model/geom/builders/CubeDeformation;
+accessible field net/minecraft/client/model/geom/LayerDefinitions INNER_ARMOR_DEFORMATION Lnet/minecraft/client/model/geom/builders/CubeDeformation;
+accessible field net/minecraft/client/multiplayer/ClientPacketListener commands Lcom/mojang/brigadier/CommandDispatcher;
 accessible method net/minecraft/client/particle/FireworkParticles$Starter createParticle (DDDDDD[I[IZZ)V
 accessible method net/minecraft/client/particle/FireworkParticles$Starter createParticleBall (DI[I[IZZ)V
 accessible method net/minecraft/client/particle/FireworkParticles$Starter createParticleShape (D[[D[I[IZZZ)V
@@ -122,7 +122,7 @@ accessible method net/minecraft/client/renderer/block/model/BlockModel bakeFace 
 accessible method net/minecraft/client/renderer/block/model/ItemModelGenerator processFrames (ILjava/lang/String;Lnet/minecraft/client/renderer/texture/SpriteContents;)Ljava/util/List;
 accessible class net/minecraft/client/renderer/block/model/ItemOverride$Deserializer
 accessible method net/minecraft/client/renderer/block/model/ItemOverride$Deserializer <init> ()V
-# protected net/minecraft/client/renderer/block/model/ItemOverrides <init> ()V
+accessible method net/minecraft/client/renderer/block/model/ItemOverrides <init> ()V
 accessible class net/minecraft/client/renderer/block/model/ItemOverrides$BakedOverride
 accessible class net/minecraft/client/renderer/block/model/ItemTransform$Deserializer
 accessible method net/minecraft/client/renderer/block/model/ItemTransform$Deserializer <init> ()V
@@ -134,10 +134,10 @@ accessible method net/minecraft/client/renderer/block/model/ItemTransforms$Deser
 accessible field net/minecraft/client/renderer/blockentity/BlockEntityRenderDispatcher font Lnet/minecraft/client/gui/Font;
 accessible method net/minecraft/client/renderer/blockentity/BlockEntityRenderers register (Lnet/minecraft/world/level/block/entity/BlockEntityType;Lnet/minecraft/client/renderer/blockentity/BlockEntityRendererProvider;)V
 # private-f net/minecraft/client/renderer/blockentity/PistonHeadRenderer blockRenderer
-# accessible field net/minecraft/client/renderer/blockentity/SkullBlockRenderer SKIN_BY_TYPE
-# accessible field net/minecraft/client/renderer/entity/EntityRenderDispatcher renderers
+accessible field net/minecraft/client/renderer/blockentity/SkullBlockRenderer SKIN_BY_TYPE Ljava/util/Map;
+accessible field net/minecraft/client/renderer/entity/EntityRenderDispatcher renderers Ljava/util/Map;
 accessible method net/minecraft/client/renderer/entity/EntityRenderers register (Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/client/renderer/entity/EntityRendererProvider;)V
-# protected net/minecraft/client/renderer/entity/ItemEntityRenderer getRenderAmount (Lnet/minecraft/world/item/ItemStack;)I
+accessible method net/minecraft/client/renderer/entity/ItemEntityRenderer getRenderAmount (Lnet/minecraft/world/item/ItemStack;)I
 accessible method net/minecraft/client/renderer/entity/ItemRenderer renderQuadList (Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;Ljava/util/List;Lnet/minecraft/world/item/ItemStack;II)V
 accessible method net/minecraft/client/renderer/entity/ItemRenderer renderModelLists (Lnet/minecraft/client/resources/model/BakedModel;Lnet/minecraft/world/item/ItemStack;IILcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;)V
 accessible method net/minecraft/client/renderer/entity/LivingEntityRenderer addLayer (Lnet/minecraft/client/renderer/entity/layers/RenderLayer;)Z
@@ -146,7 +146,7 @@ accessible method net/minecraft/client/renderer/entity/LivingEntityRenderer addL
 # default net/minecraft/client/renderer/texture/SpriteContents getFrameCount ()I
 accessible method net/minecraft/client/resources/ClientPackSource createVanillaPackSource (Ljava/nio/file/Path;)Lnet/minecraft/server/packs/VanillaPackResources;
 # protected net/minecraft/client/resources/TextureAtlasHolder textureAtlas
-# protected net/minecraft/client/resources/model/ModelBakery loadBlockModel (Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/client/renderer/block/model/BlockModel;
+accessible method net/minecraft/client/resources/model/ModelBakery loadBlockModel (Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/client/renderer/block/model/BlockModel;
 accessible method net/minecraft/client/resources/model/SimpleBakedModel$Builder <init> (ZZZLnet/minecraft/client/renderer/block/model/ItemTransforms;Lnet/minecraft/client/renderer/block/model/ItemOverrides;)V
 # accessible field net/minecraft/client/sounds/SoundEngine soundManager
 # accessible field net/minecraft/commands/CommandSourceStack source
@@ -165,29 +165,29 @@ accessible field net/minecraft/core/MappedRegistry unregisteredIntrusiveHolders 
 accessible class net/minecraft/core/RegistrySynchronization$NetworkedRegistryData
 accessible method net/minecraft/core/particles/ParticleType <init> (ZLnet/minecraft/core/particles/ParticleOptions$Deserializer;)V
 accessible method net/minecraft/core/particles/SimpleParticleType <init> (Z)V
-# protected net/minecraft/data/loot/BlockLootSubProvider createSilkTouchOnlyTable (Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-# protected net/minecraft/data/loot/BlockLootSubProvider createPotFlowerItemTable (Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-# protected net/minecraft/data/loot/BlockLootSubProvider createSelfDropDispatchTable (Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition$Builder;Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-# protected net/minecraft/data/loot/EntityLootSubProvider canHaveLootTable (Lnet/minecraft/world/entity/EntityType;)Z
+accessible method net/minecraft/data/loot/BlockLootSubProvider createSilkTouchOnlyTable (Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+accessible method net/minecraft/data/loot/BlockLootSubProvider createPotFlowerItemTable (Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+accessible method net/minecraft/data/loot/BlockLootSubProvider createSelfDropDispatchTable (Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition$Builder;Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+accessible method net/minecraft/data/loot/EntityLootSubProvider canHaveLootTable (Lnet/minecraft/world/entity/EntityType;)Z
 # protected net/minecraft/data/recipes/RecipeProvider recipePathProvider
 # protected net/minecraft/data/recipes/RecipeProvider advancementPathProvider
-# protected net/minecraft/data/recipes/RecipeProvider insideOf (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/advancements/critereon/EnterBlockTrigger$TriggerInstance;
-# protected net/minecraft/data/recipes/RecipeProvider inventoryTrigger ([Lnet/minecraft/advancements/critereon/ItemPredicate;)Lnet/minecraft/advancements/critereon/InventoryChangeTrigger$TriggerInstance;
-# protected net/minecraft/data/recipes/RecipeProvider has (Lnet/minecraft/advancements/critereon/MinMaxBounds$Ints;Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/advancements/critereon/InventoryChangeTrigger$TriggerInstance;
-# protected net/minecraft/data/recipes/RecipeProvider getBaseBlock (Lnet/minecraft/data/BlockFamily;Lnet/minecraft/data/BlockFamily$Variant;)Lnet/minecraft/world/level/block/Block;
-# protected net/minecraft/data/recipes/RecipeProvider buttonBuilder (Lnet/minecraft/world/level/ItemLike;Lnet/minecraft/world/item/crafting/Ingredient;)Lnet/minecraft/data/recipes/RecipeBuilder;
-# protected net/minecraft/data/recipes/RecipeProvider fenceBuilder (Lnet/minecraft/world/level/ItemLike;Lnet/minecraft/world/item/crafting/Ingredient;)Lnet/minecraft/data/recipes/RecipeBuilder;
-# protected net/minecraft/data/recipes/RecipeProvider fenceGateBuilder (Lnet/minecraft/world/level/ItemLike;Lnet/minecraft/world/item/crafting/Ingredient;)Lnet/minecraft/data/recipes/RecipeBuilder;
-# protected net/minecraft/data/recipes/RecipeProvider trapdoorBuilder (Lnet/minecraft/world/level/ItemLike;Lnet/minecraft/world/item/crafting/Ingredient;)Lnet/minecraft/data/recipes/RecipeBuilder;
-# protected net/minecraft/data/recipes/RecipeProvider signBuilder (Lnet/minecraft/world/level/ItemLike;Lnet/minecraft/world/item/crafting/Ingredient;)Lnet/minecraft/data/recipes/RecipeBuilder;
-# protected net/minecraft/data/recipes/RecipeProvider smeltingResultFromBase (Ljava/util/function/Consumer;Lnet/minecraft/world/level/ItemLike;Lnet/minecraft/world/level/ItemLike;)V
-# protected net/minecraft/data/recipes/RecipeProvider cutBuilder (Lnet/minecraft/data/recipes/RecipeCategory;Lnet/minecraft/world/level/ItemLike;Lnet/minecraft/world/item/crafting/Ingredient;)Lnet/minecraft/data/recipes/ShapedRecipeBuilder;
-# protected net/minecraft/data/recipes/RecipeProvider oreCooking (Ljava/util/function/Consumer;Lnet/minecraft/world/item/crafting/RecipeSerializer;Ljava/util/List;Lnet/minecraft/data/recipes/RecipeCategory;Lnet/minecraft/world/level/ItemLike;FILjava/lang/String;Ljava/lang/String;)V
-# protected net/minecraft/data/recipes/RecipeProvider wallBuilder (Lnet/minecraft/data/recipes/RecipeCategory;Lnet/minecraft/world/level/ItemLike;Lnet/minecraft/world/item/crafting/Ingredient;)Lnet/minecraft/data/recipes/RecipeBuilder;
-# protected net/minecraft/data/recipes/RecipeProvider polishedBuilder (Lnet/minecraft/data/recipes/RecipeCategory;Lnet/minecraft/world/level/ItemLike;Lnet/minecraft/world/item/crafting/Ingredient;)Lnet/minecraft/data/recipes/RecipeBuilder;
-# protected net/minecraft/data/recipes/RecipeProvider pressurePlateBuilder (Lnet/minecraft/data/recipes/RecipeCategory;Lnet/minecraft/world/level/ItemLike;Lnet/minecraft/world/item/crafting/Ingredient;)Lnet/minecraft/data/recipes/RecipeBuilder;
-# protected net/minecraft/data/recipes/RecipeProvider nineBlockStorageRecipes (Ljava/util/function/Consumer;Lnet/minecraft/data/recipes/RecipeCategory;Lnet/minecraft/world/level/ItemLike;Lnet/minecraft/data/recipes/RecipeCategory;Lnet/minecraft/world/level/ItemLike;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-# protected net/minecraft/data/recipes/RecipeProvider simpleCookingRecipe (Ljava/util/function/Consumer;Ljava/lang/String;Lnet/minecraft/world/item/crafting/RecipeSerializer;ILnet/minecraft/world/level/ItemLike;Lnet/minecraft/world/level/ItemLike;F)V
+accessible method net/minecraft/data/recipes/RecipeProvider insideOf (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/advancements/critereon/EnterBlockTrigger$TriggerInstance;
+accessible method net/minecraft/data/recipes/RecipeProvider inventoryTrigger ([Lnet/minecraft/advancements/critereon/ItemPredicate;)Lnet/minecraft/advancements/critereon/InventoryChangeTrigger$TriggerInstance;
+accessible method net/minecraft/data/recipes/RecipeProvider has (Lnet/minecraft/advancements/critereon/MinMaxBounds$Ints;Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/advancements/critereon/InventoryChangeTrigger$TriggerInstance;
+accessible method net/minecraft/data/recipes/RecipeProvider getBaseBlock (Lnet/minecraft/data/BlockFamily;Lnet/minecraft/data/BlockFamily$Variant;)Lnet/minecraft/world/level/block/Block;
+accessible method net/minecraft/data/recipes/RecipeProvider buttonBuilder (Lnet/minecraft/world/level/ItemLike;Lnet/minecraft/world/item/crafting/Ingredient;)Lnet/minecraft/data/recipes/RecipeBuilder;
+accessible method net/minecraft/data/recipes/RecipeProvider fenceBuilder (Lnet/minecraft/world/level/ItemLike;Lnet/minecraft/world/item/crafting/Ingredient;)Lnet/minecraft/data/recipes/RecipeBuilder;
+accessible method net/minecraft/data/recipes/RecipeProvider fenceGateBuilder (Lnet/minecraft/world/level/ItemLike;Lnet/minecraft/world/item/crafting/Ingredient;)Lnet/minecraft/data/recipes/RecipeBuilder;
+accessible method net/minecraft/data/recipes/RecipeProvider trapdoorBuilder (Lnet/minecraft/world/level/ItemLike;Lnet/minecraft/world/item/crafting/Ingredient;)Lnet/minecraft/data/recipes/RecipeBuilder;
+accessible method net/minecraft/data/recipes/RecipeProvider signBuilder (Lnet/minecraft/world/level/ItemLike;Lnet/minecraft/world/item/crafting/Ingredient;)Lnet/minecraft/data/recipes/RecipeBuilder;
+accessible method net/minecraft/data/recipes/RecipeProvider smeltingResultFromBase (Ljava/util/function/Consumer;Lnet/minecraft/world/level/ItemLike;Lnet/minecraft/world/level/ItemLike;)V
+accessible method net/minecraft/data/recipes/RecipeProvider cutBuilder (Lnet/minecraft/data/recipes/RecipeCategory;Lnet/minecraft/world/level/ItemLike;Lnet/minecraft/world/item/crafting/Ingredient;)Lnet/minecraft/data/recipes/ShapedRecipeBuilder;
+accessible method net/minecraft/data/recipes/RecipeProvider oreCooking (Ljava/util/function/Consumer;Lnet/minecraft/world/item/crafting/RecipeSerializer;Ljava/util/List;Lnet/minecraft/data/recipes/RecipeCategory;Lnet/minecraft/world/level/ItemLike;FILjava/lang/String;Ljava/lang/String;)V
+accessible method net/minecraft/data/recipes/RecipeProvider wallBuilder (Lnet/minecraft/data/recipes/RecipeCategory;Lnet/minecraft/world/level/ItemLike;Lnet/minecraft/world/item/crafting/Ingredient;)Lnet/minecraft/data/recipes/RecipeBuilder;
+accessible method net/minecraft/data/recipes/RecipeProvider polishedBuilder (Lnet/minecraft/data/recipes/RecipeCategory;Lnet/minecraft/world/level/ItemLike;Lnet/minecraft/world/item/crafting/Ingredient;)Lnet/minecraft/data/recipes/RecipeBuilder;
+accessible method net/minecraft/data/recipes/RecipeProvider pressurePlateBuilder (Lnet/minecraft/data/recipes/RecipeCategory;Lnet/minecraft/world/level/ItemLike;Lnet/minecraft/world/item/crafting/Ingredient;)Lnet/minecraft/data/recipes/RecipeBuilder;
+accessible method net/minecraft/data/recipes/RecipeProvider nineBlockStorageRecipes (Ljava/util/function/Consumer;Lnet/minecraft/data/recipes/RecipeCategory;Lnet/minecraft/world/level/ItemLike;Lnet/minecraft/data/recipes/RecipeCategory;Lnet/minecraft/world/level/ItemLike;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+accessible method net/minecraft/data/recipes/RecipeProvider simpleCookingRecipe (Ljava/util/function/Consumer;Ljava/lang/String;Lnet/minecraft/world/item/crafting/RecipeSerializer;ILnet/minecraft/world/level/ItemLike;Lnet/minecraft/world/level/ItemLike;F)V
 accessible class net/minecraft/data/recipes/ShapedRecipeBuilder$Result
 accessible field net/minecraft/data/recipes/packs/VanillaRecipeProvider COAL_SMELTABLES Lcom/google/common/collect/ImmutableList;
 accessible field net/minecraft/data/recipes/packs/VanillaRecipeProvider IRON_SMELTABLES Lcom/google/common/collect/ImmutableList;
@@ -232,17 +232,17 @@ accessible method net/minecraft/world/entity/Entity getEncodeId ()Ljava/lang/Str
 accessible method net/minecraft/world/entity/SpawnPlacements register (Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/entity/SpawnPlacements$Type;Lnet/minecraft/world/level/levelgen/Heightmap$Types;Lnet/minecraft/world/entity/SpawnPlacements$SpawnPredicate;)V
 accessible method net/minecraft/world/entity/ai/memory/MemoryModuleType <init> (Ljava/util/Optional;)V
 accessible method net/minecraft/world/entity/ai/sensing/SensorType <init> (Ljava/util/function/Supplier;)V
-# protected net/minecraft/world/entity/item/PrimedTnt explode - make it easier to extend TNTEntity with custom explosion logic ()V
-# protected net/minecraft/world/entity/monster/AbstractSkeleton getStepSound - make AbstractSkeletonEntity implementable ()Lnet/minecraft/sounds/SoundEvent;
-# protected net/minecraft/world/entity/monster/Skeleton getStepSound - make AbstractSkeletonEntity implementable ()Lnet/minecraft/sounds/SoundEvent;
-# protected net/minecraft/world/entity/monster/Stray getStepSound - make AbstractSkeletonEntity implementable ()Lnet/minecraft/sounds/SoundEvent;
-# protected net/minecraft/world/entity/monster/WitherSkeleton getStepSound - make AbstractSkeletonEntity implementable ()Lnet/minecraft/sounds/SoundEvent;
+accessible method net/minecraft/world/entity/item/PrimedTnt explode ()V
+accessible method net/minecraft/world/entity/monster/AbstractSkeleton getStepSound ()Lnet/minecraft/sounds/SoundEvent;
+accessible method net/minecraft/world/entity/monster/Skeleton getStepSound ()Lnet/minecraft/sounds/SoundEvent;
+accessible method net/minecraft/world/entity/monster/Stray getStepSound ()Lnet/minecraft/sounds/SoundEvent;
+accessible method net/minecraft/world/entity/monster/WitherSkeleton getStepSound ()Lnet/minecraft/sounds/SoundEvent;
 accessible method net/minecraft/world/entity/npc/VillagerType <init> (Ljava/lang/String;)V
 accessible method net/minecraft/world/entity/player/Player closeContainer ()V
-# protected net/minecraft/world/entity/projectile/Projectile <init> (Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)V
+accessible method net/minecraft/world/entity/projectile/Projectile <init> (Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)V
 # private-f net/minecraft/world/entity/raid/Raid$RaiderType VALUES
 accessible method net/minecraft/world/entity/schedule/Activity <init> (Ljava/lang/String;)V
-# protected net/minecraft/world/entity/vehicle/AbstractMinecart getDropItem - make AbstractMinecart implementable ()Lnet/minecraft/world/item/Item;
+accessible method net/minecraft/world/entity/vehicle/AbstractMinecart getDropItem ()Lnet/minecraft/world/item/Item;
 # accessible field net/minecraft/world/inventory/AnvilMenu repairItemCountCost
 accessible method net/minecraft/world/inventory/MenuType <init> (Lnet/minecraft/world/inventory/MenuType$MenuSupplier;Lnet/minecraft/world/flag/FeatureFlagSet;)V
 accessible class net/minecraft/world/inventory/MenuType$MenuSupplier
@@ -276,7 +276,7 @@ accessible class net/minecraft/world/item/alchemy/PotionBrewing$Mix
 accessible method net/minecraft/world/item/context/BlockPlaceContext <init> (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/phys/BlockHitResult;)V
 accessible method net/minecraft/world/item/context/UseOnContext <init> (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/phys/BlockHitResult;)V
 extendable class net/minecraft/world/item/crafting/Ingredient
-# protected net/minecraft/world/item/crafting/Ingredient <init> (Ljava/util/stream/Stream;)V
+accessible method net/minecraft/world/item/crafting/Ingredient <init> (Ljava/util/stream/Stream;)V
 accessible method net/minecraft/world/item/crafting/Ingredient valueFromJson (Lcom/google/gson/JsonObject;)Lnet/minecraft/world/item/crafting/Ingredient$Value;
 # public+f net/minecraft/world/item/crafting/Ingredient toNetwork (Lnet/minecraft/network/FriendlyByteBuf;)V
 accessible method net/minecraft/world/item/crafting/Ingredient fromValues (Ljava/util/stream/Stream;)Lnet/minecraft/world/item/crafting/Ingredient;
@@ -290,19 +290,19 @@ accessible method net/minecraft/world/level/GameRules$BooleanValue create (Z)Lne
 accessible method net/minecraft/world/level/GameRules$BooleanValue create (ZLjava/util/function/BiConsumer;)Lnet/minecraft/world/level/GameRules$Type;
 accessible method net/minecraft/world/level/GameRules$IntegerValue create (ILjava/util/function/BiConsumer;)Lnet/minecraft/world/level/GameRules$Type;
 accessible method net/minecraft/world/level/GameRules$IntegerValue create (I)Lnet/minecraft/world/level/GameRules$Type;
-# accessible field net/minecraft/world/level/Level oRainLevel
-# accessible field net/minecraft/world/level/Level rainLevel
-# accessible field net/minecraft/world/level/Level oThunderLevel
-# accessible field net/minecraft/world/level/Level thunderLevel
+accessible field net/minecraft/world/level/Level oRainLevel F
+accessible field net/minecraft/world/level/Level rainLevel F
+accessible field net/minecraft/world/level/Level oThunderLevel F
+accessible field net/minecraft/world/level/Level thunderLevel F
 accessible class net/minecraft/world/level/biome/Biome$ClimateSettings
 # protected net/minecraft/world/level/biome/BiomeGenerationSettings$PlainBuilder features
 # protected net/minecraft/world/level/biome/BiomeGenerationSettings$PlainBuilder carvers
-# protected net/minecraft/world/level/biome/BiomeGenerationSettings$PlainBuilder addFeatureStepsUpTo (I)V
+accessible method net/minecraft/world/level/biome/BiomeGenerationSettings$PlainBuilder addFeatureStepsUpTo (I)V
 # #group protected net/minecraft/world/level/biome/BiomeSpecialEffects$Builder *
-# protected net/minecraft/world/level/biome/BiomeSpecialEffects$Builder fogColor
-# protected net/minecraft/world/level/biome/BiomeSpecialEffects$Builder waterColor
-# protected net/minecraft/world/level/biome/BiomeSpecialEffects$Builder waterFogColor
-# protected net/minecraft/world/level/biome/BiomeSpecialEffects$Builder skyColor
+accessible field net/minecraft/world/level/biome/BiomeSpecialEffects$Builder fogColor Ljava/util/OptionalInt;
+accessible field net/minecraft/world/level/biome/BiomeSpecialEffects$Builder waterColor Ljava/util/OptionalInt;
+accessible field net/minecraft/world/level/biome/BiomeSpecialEffects$Builder waterFogColor Ljava/util/OptionalInt;
+accessible field net/minecraft/world/level/biome/BiomeSpecialEffects$Builder skyColor Ljava/util/OptionalInt;
 # protected net/minecraft/world/level/biome/BiomeSpecialEffects$Builder foliageColorOverride
 # protected net/minecraft/world/level/biome/BiomeSpecialEffects$Builder grassColorOverride
 # protected net/minecraft/world/level/biome/BiomeSpecialEffects$Builder grassColorModifier
@@ -436,20 +436,20 @@ accessible method net/minecraft/world/level/chunk/ChunkStatus <init> (Lnet/minec
 # protected net/minecraft/world/level/levelgen/Aquifer$NoiseBasedAquifer minGridZ
 # protected net/minecraft/world/level/levelgen/Aquifer$NoiseBasedAquifer gridSizeX
 # protected net/minecraft/world/level/levelgen/Aquifer$NoiseBasedAquifer gridSizeZ
-# protected net/minecraft/world/level/levelgen/Aquifer$NoiseBasedAquifer similarity (II)D
-# protected net/minecraft/world/level/levelgen/Aquifer$NoiseBasedAquifer getIndex (III)I
-# protected net/minecraft/world/level/levelgen/Aquifer$NoiseBasedAquifer gridX (I)I
-# protected net/minecraft/world/level/levelgen/Aquifer$NoiseBasedAquifer gridY (I)I
-# protected net/minecraft/world/level/levelgen/Aquifer$NoiseBasedAquifer gridZ (I)I
+accessible method net/minecraft/world/level/levelgen/Aquifer$NoiseBasedAquifer similarity (II)D
+accessible method net/minecraft/world/level/levelgen/Aquifer$NoiseBasedAquifer getIndex (III)I
+accessible method net/minecraft/world/level/levelgen/Aquifer$NoiseBasedAquifer gridX (I)I
+accessible method net/minecraft/world/level/levelgen/Aquifer$NoiseBasedAquifer gridY (I)I
+accessible method net/minecraft/world/level/levelgen/Aquifer$NoiseBasedAquifer gridZ (I)I
 # protected net/minecraft/world/level/levelgen/Beardifier pieceIterator
 # protected net/minecraft/world/level/levelgen/Beardifier junctionIterator
-# protected net/minecraft/world/level/levelgen/Beardifier getBuryContribution (III)D
-# protected net/minecraft/world/level/levelgen/Beardifier getBeardContribution (IIII)D
+accessible method net/minecraft/world/level/levelgen/Beardifier getBuryContribution (III)D
+accessible method net/minecraft/world/level/levelgen/Beardifier getBeardContribution (IIII)D
 # private-f net/minecraft/world/level/levelgen/DebugLevelSource ALL_BLOCKS
 # private-f net/minecraft/world/level/levelgen/DebugLevelSource GRID_WIDTH
 # private-f net/minecraft/world/level/levelgen/DebugLevelSource GRID_HEIGHT
 extendable class net/minecraft/world/level/levelgen/NoiseBasedChunkGenerator
-# protected net/minecraft/world/level/levelgen/NoiseBasedChunkGenerator iterateNoiseColumn (Lnet/minecraft/world/level/LevelHeightAccessor;Lnet/minecraft/world/level/levelgen/RandomState;IILorg/apache/commons/lang3/mutable/MutableObject;Ljava/util/function/Predicate;)Ljava/util/OptionalInt;
+accessible method net/minecraft/world/level/levelgen/NoiseBasedChunkGenerator iterateNoiseColumn (Lnet/minecraft/world/level/LevelHeightAccessor;Lnet/minecraft/world/level/levelgen/RandomState;IILorg/apache/commons/lang3/mutable/MutableObject;Ljava/util/function/Predicate;)Ljava/util/OptionalInt;
 # #group public net/minecraft/world/level/levelgen/NoiseGeneratorSettings *()
 accessible method net/minecraft/world/level/levelgen/NoiseGeneratorSettings caves (Lnet/minecraft/data/worldgen/BootstapContext;)Lnet/minecraft/world/level/levelgen/NoiseGeneratorSettings;
 accessible method net/minecraft/world/level/levelgen/NoiseGeneratorSettings end (Lnet/minecraft/data/worldgen/BootstapContext;)Lnet/minecraft/world/level/levelgen/NoiseGeneratorSettings;

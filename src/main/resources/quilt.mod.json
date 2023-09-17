@@ -79,6 +79,15 @@
 			],
 			"net/minecraft/class_2960": [
 				"net/pillowmc/shearapi/extensions/resources/IShearResourceLocation"
+			],
+			"net/minecraft/class_2535": [
+				"net/pillowmc/shearapi/extensions/network/IShearConnection"
+			],
+			"net/minecraft/class_2168": [
+				"net/minecraftforge/common/extensions/IForgeCommandSourceStack"
+			],
+			"net/minecraft/class_310": [
+				"net/minecraftforge/client/extensions/IForgeMinecraft"
 			]
     }
   }

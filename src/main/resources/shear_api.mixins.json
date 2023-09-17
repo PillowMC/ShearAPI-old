@@ -4,12 +4,14 @@
   "package": "net.pillowmc.shearapi.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "accessor.network.ConnectionAccessor",
     "extensions.crash.CrashReportCategoryMixin",
     "extensions.crash.CrashReportMixin",
     "extensions.neoforge.AdvancementBuilderMixin",
     "extensions.neoforge.FluidMixin",
     "extensions.neoforge.FluidStateMixin",
-    "neoforge.TagEntryMixin"
+    "neoforge.TagEntryMixin",
+    "neoforge.network.ConnectionMixin"
   ],
   "client": [
     "extensions.client.render.RenderTypeMixin"
