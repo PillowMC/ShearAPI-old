@@ -6,54 +6,54 @@ accessible method net/minecraft/client/Minecraft createSearchTrees ()V
 # mutable field net/minecraft/client/Options keyMappings
 accessible class net/minecraft/client/Options$FieldAccess
 # #group protected net/minecraft/client/gui/Gui *
-# protected net/minecraft/client/gui/Gui scopeScale
-# protected net/minecraft/client/gui/Gui SPYGLASS_SCOPE_LOCATION
-# protected net/minecraft/client/gui/Gui POWDER_SNOW_OUTLINE_LOCATION
-# protected net/minecraft/client/gui/Gui COLOR_WHITE
-# protected net/minecraft/client/gui/Gui MIN_CROSSHAIR_ATTACK_SPEED
-# protected net/minecraft/client/gui/Gui NUM_HEARTS_PER_ROW
-# protected net/minecraft/client/gui/Gui LINE_HEIGHT
-# protected net/minecraft/client/gui/Gui SPACER
-# protected net/minecraft/client/gui/Gui PORTAL_OVERLAY_ALPHA_MIN
-# protected net/minecraft/client/gui/Gui HEART_SIZE
-# protected net/minecraft/client/gui/Gui HEART_SEPARATION
-# protected net/minecraft/client/gui/Gui autosaveIndicatorValue
-# protected net/minecraft/client/gui/Gui lastAutosaveIndicatorValue
-# protected net/minecraft/client/gui/Gui SAVING_TEXT
-# protected net/minecraft/client/gui/Gui AUTOSAVE_FADE_SPEED_FACTOR
-# protected net/minecraft/client/gui/Gui chatDisabledByPlayerShown
+accessible field net/minecraft/client/gui/Gui scopeScale F
+accessible field net/minecraft/client/gui/Gui SPYGLASS_SCOPE_LOCATION Lnet/minecraft/resources/ResourceLocation;
+accessible field net/minecraft/client/gui/Gui POWDER_SNOW_OUTLINE_LOCATION Lnet/minecraft/resources/ResourceLocation;
+accessible field net/minecraft/client/gui/Gui COLOR_WHITE I
+accessible field net/minecraft/client/gui/Gui MIN_CROSSHAIR_ATTACK_SPEED F
+accessible field net/minecraft/client/gui/Gui NUM_HEARTS_PER_ROW I
+accessible field net/minecraft/client/gui/Gui LINE_HEIGHT I
+accessible field net/minecraft/client/gui/Gui SPACER Ljava/lang/String;
+accessible field net/minecraft/client/gui/Gui PORTAL_OVERLAY_ALPHA_MIN F
+accessible field net/minecraft/client/gui/Gui HEART_SIZE I
+accessible field net/minecraft/client/gui/Gui HEART_SEPARATION I
+accessible field net/minecraft/client/gui/Gui autosaveIndicatorValue F
+accessible field net/minecraft/client/gui/Gui lastAutosaveIndicatorValue F
+accessible field net/minecraft/client/gui/Gui SAVING_TEXT Lnet/minecraft/network/chat/Component;
+accessible field net/minecraft/client/gui/Gui AUTOSAVE_FADE_SPEED_FACTOR F
+accessible field net/minecraft/client/gui/Gui chatDisabledByPlayerShown Z
 accessible field net/minecraft/client/gui/Gui GUI_ICONS_LOCATION Lnet/minecraft/resources/ResourceLocation;
-# protected net/minecraft/client/gui/Gui titleFadeInTime
-# protected net/minecraft/client/gui/Gui titleStayTime
-# protected net/minecraft/client/gui/Gui titleFadeOutTime
-# protected net/minecraft/client/gui/Gui lastHealth
-# protected net/minecraft/client/gui/Gui displayHealth
-# protected net/minecraft/client/gui/Gui lastHealthTime
-# protected net/minecraft/client/gui/Gui healthBlinkTime
-# protected net/minecraft/client/gui/Gui screenWidth
-# protected net/minecraft/client/gui/Gui screenHeight
+accessible field net/minecraft/client/gui/Gui titleStayTime I
+accessible field net/minecraft/client/gui/Gui titleFadeOutTime I
+accessible field net/minecraft/client/gui/Gui titleFadeInTime I
+accessible field net/minecraft/client/gui/Gui lastHealth I
+accessible field net/minecraft/client/gui/Gui displayHealth I
+accessible field net/minecraft/client/gui/Gui lastHealthTime J
+accessible field net/minecraft/client/gui/Gui healthBlinkTime J
+accessible field net/minecraft/client/gui/Gui screenWidth I
+accessible field net/minecraft/client/gui/Gui screenHeight I
 accessible field net/minecraft/client/gui/Gui VIGNETTE_LOCATION Lnet/minecraft/resources/ResourceLocation;
 accessible field net/minecraft/client/gui/Gui WIDGETS_LOCATION Lnet/minecraft/resources/ResourceLocation;
 accessible field net/minecraft/client/gui/Gui PUMPKIN_BLUR_LOCATION Lnet/minecraft/resources/ResourceLocation;
 accessible field net/minecraft/client/gui/Gui DEMO_EXPIRED_TEXT Lnet/minecraft/resources/ResourceLocation;
-# protected net/minecraft/client/gui/Gui random
+accessible field net/minecraft/client/gui/Gui random Lnet/minecraft/util/RandomSource;
 accessible field net/minecraft/client/gui/Gui minecraft Lnet/minecraft/client/Minecraft;
-# protected net/minecraft/client/gui/Gui itemRenderer
-# protected net/minecraft/client/gui/Gui chat
-# protected net/minecraft/client/gui/Gui tickCount
-# protected net/minecraft/client/gui/Gui overlayMessageString
-# protected net/minecraft/client/gui/Gui overlayMessageTime
-# protected net/minecraft/client/gui/Gui animateOverlayMessageColor
-# protected net/minecraft/client/gui/Gui toolHighlightTimer
-# protected net/minecraft/client/gui/Gui lastToolHighlight
-# protected net/minecraft/client/gui/Gui debugScreen
-# protected net/minecraft/client/gui/Gui subtitleOverlay
-# protected net/minecraft/client/gui/Gui spectatorGui
-# protected net/minecraft/client/gui/Gui tabList
-# protected net/minecraft/client/gui/Gui bossOverlay
-# protected net/minecraft/client/gui/Gui titleTime
-# protected net/minecraft/client/gui/Gui title
-# protected net/minecraft/client/gui/Gui subtitle
+accessible field net/minecraft/client/gui/Gui itemRenderer Lnet/minecraft/client/renderer/entity/ItemRenderer;
+accessible field net/minecraft/client/gui/Gui chat Lnet/minecraft/client/gui/components/ChatComponent;
+accessible field net/minecraft/client/gui/Gui tickCount I
+accessible field net/minecraft/client/gui/Gui overlayMessageString Lnet/minecraft/network/chat/Component;
+accessible field net/minecraft/client/gui/Gui overlayMessageTime I
+accessible field net/minecraft/client/gui/Gui animateOverlayMessageColor Z
+accessible field net/minecraft/client/gui/Gui toolHighlightTimer I
+accessible field net/minecraft/client/gui/Gui lastToolHighlight Lnet/minecraft/world/item/ItemStack;
+accessible field net/minecraft/client/gui/Gui debugScreen Lnet/minecraft/client/gui/components/DebugScreenOverlay;
+accessible field net/minecraft/client/gui/Gui subtitleOverlay Lnet/minecraft/client/gui/components/SubtitleOverlay;
+accessible field net/minecraft/client/gui/Gui spectatorGui Lnet/minecraft/client/gui/components/spectator/SpectatorGui;
+accessible field net/minecraft/client/gui/Gui tabList Lnet/minecraft/client/gui/components/PlayerTabOverlay;
+accessible field net/minecraft/client/gui/Gui bossOverlay Lnet/minecraft/client/gui/components/BossHealthOverlay;
+accessible field net/minecraft/client/gui/Gui titleTime I
+accessible field net/minecraft/client/gui/Gui title Lnet/minecraft/network/chat/Component;
+accessible field net/minecraft/client/gui/Gui subtitle Lnet/minecraft/network/chat/Component;
 # #endgroup
 accessible method net/minecraft/client/gui/Gui renderHearts (Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/world/entity/player/Player;IIIIFIIIZ)V
 accessible method net/minecraft/client/gui/Gui displayScoreboardSidebar (Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/world/scores/Objective;)V
@@ -148,8 +148,8 @@ accessible method net/minecraft/client/resources/ClientPackSource createVanillaP
 # protected net/minecraft/client/resources/TextureAtlasHolder textureAtlas
 accessible method net/minecraft/client/resources/model/ModelBakery loadBlockModel (Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/client/renderer/block/model/BlockModel;
 accessible method net/minecraft/client/resources/model/SimpleBakedModel$Builder <init> (ZZZLnet/minecraft/client/renderer/block/model/ItemTransforms;Lnet/minecraft/client/renderer/block/model/ItemOverrides;)V
-# accessible field net/minecraft/client/sounds/SoundEngine soundManager
-# accessible field net/minecraft/commands/CommandSourceStack source
+accessible field net/minecraft/client/sounds/SoundEngine soundManager Lnet/minecraft/client/sounds/SoundManager;
+accessible field net/minecraft/commands/CommandSourceStack source Lnet/minecraft/commands/CommandSource;
 accessible method net/minecraft/commands/arguments/selector/EntitySelectorParser finalizePredicates ()V
 accessible method net/minecraft/commands/arguments/selector/EntitySelectorParser parseOptions ()V
 accessible method net/minecraft/commands/arguments/selector/options/EntitySelectorOptions register (Ljava/lang/String;Lnet/minecraft/commands/arguments/selector/options/EntitySelectorOptions$Modifier;Ljava/util/function/Predicate;Lnet/minecraft/network/chat/Component;)V

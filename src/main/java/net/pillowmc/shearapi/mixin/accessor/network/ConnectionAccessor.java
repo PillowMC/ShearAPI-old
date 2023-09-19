@@ -9,10 +9,10 @@ import net.minecraft.network.protocol.PacketFlow;
 import net.pillowmc.shearapi.extensions.network.IShearConnection;
 
 @Mixin(Connection.class)
-public interface ConnectionAccessor extends IShearConnection {
+public abstract class ConnectionAccessor implements IShearConnection {
 	@Accessor("channel")
-	Channel channel();
+	abstract public Channel channel();
 
 	@Accessor("receiving")
-	PacketFlow getDirection();
+	abstract public PacketFlow getDirection();
 }

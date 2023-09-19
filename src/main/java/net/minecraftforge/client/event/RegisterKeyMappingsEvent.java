@@ -5,6 +5,7 @@
 
 package net.minecraftforge.client.event;
 
+import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Options;
 import net.minecraftforge.eventbus.api.Cancelable;
@@ -12,7 +13,6 @@ import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.fml.LogicalSide;
 import net.minecraftforge.fml.event.IModBusEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import org.apache.commons.lang3.ArrayUtils;
 import org.jetbrains.annotations.ApiStatus;
 
 /**
@@ -25,12 +25,12 @@ import org.jetbrains.annotations.ApiStatus;
  */
 public class RegisterKeyMappingsEvent extends Event implements IModBusEvent
 {
-    private final Options options;
+	// Pillow: Remove options field
 
     @ApiStatus.Internal
-    public RegisterKeyMappingsEvent(Options options)
+    public RegisterKeyMappingsEvent(Options ignoredOptions)
     {
-        this.options = options;
+
     }
 
     /**
@@ -38,6 +38,7 @@ public class RegisterKeyMappingsEvent extends Event implements IModBusEvent
      */
     public void register(KeyMapping key)
     {
-        options.keyMappings = ArrayUtils.add(options.keyMappings, key);
+		// Pillow: Use Fabric API instead.
+		KeyBindingHelper.registerKeyBinding(key);
     }
 }

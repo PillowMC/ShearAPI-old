@@ -5,6 +5,7 @@ import net.minecraft.client.renderer.block.model.BlockModel;
 import net.minecraft.client.renderer.block.model.ItemTransform;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderDispatcher;
 import net.minecraft.data.recipes.packs.VanillaRecipeProvider;
+import net.minecraft.server.Main;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.levelgen.NoiseGeneratorSettings;
 import org.quiltmc.loader.api.ModContainer;

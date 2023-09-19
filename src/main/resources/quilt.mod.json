@@ -88,6 +88,15 @@
 			],
 			"net/minecraft/class_310": [
 				"net/minecraftforge/client/extensions/IForgeMinecraft"
+			],
+			"net/minecraft/class_350": [
+				"net/pillowmc/shearapi/extensions/client/gui/IShearAbstractSelectionList"
+			],
+			"net/minecraft/class_2474$class_5124": [
+				"net/minecraftforge/common/extensions/IForgeTagAppender"
+			],
+			"net/minecraft/class_437": [
+				"net/pillowmc/shearapi/extensions/client/gui/IShearScreen"
 			]
     }
   }

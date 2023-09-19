@@ -14,7 +14,10 @@
     "neoforge.network.ConnectionMixin"
   ],
   "client": [
-    "extensions.client.render.RenderTypeMixin"
+    "extensions.client.gui.AbstractSelectionListMixin",
+    "extensions.client.gui.ScreenMixin",
+    "extensions.client.render.RenderTypeMixin",
+    "neoforge.client.gui.ScreenMixin"
   ],
   "injectors": {
     "defaultRequire": 1
